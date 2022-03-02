@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "private": "false",
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "dependencies": {
     "@babel/cli": "^7.17.3",

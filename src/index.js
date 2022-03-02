@@ -9,5 +9,6 @@
 
 import TestDiv from "./components/@jumbo/components/TestComponent";
 import GridContainer from "./components/@jumbo/components/GridContainer";
+import Card from './components/@jumbo/components/Common/JumboCard';
 
-export {TestDiv, GridContainer}
+export {TestDiv, GridContainer, Card}

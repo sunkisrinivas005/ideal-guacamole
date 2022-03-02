@@ -5,6 +5,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "Card", {
+  enumerable: true,
+  get: function get() {
+    return _JumboCard.default;
+  }
+});
 Object.defineProperty(exports, "GridContainer", {
   enumerable: true,
   get: function get() {
@@ -21,3 +27,5 @@ Object.defineProperty(exports, "TestDiv", {
 var _TestComponent = _interopRequireDefault(require("./components/@jumbo/components/TestComponent"));
 
 var _GridContainer = _interopRequireDefault(require("./components/@jumbo/components/GridContainer"));
+
+var _JumboCard = _interopRequireDefault(require("./components/@jumbo/components/Common/JumboCard"));
