@@ -1,0 +1,120 @@
+{
+  "name": "jumbo_module_test",
+  "version": "0.0.1",
+  "description": "PoC - Moving Jumbo react to a npm module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "private": "false",
+  "files": [ "dist" ],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/polyfill": "^7.12.1",
+    "@date-io/moment": "^2.13.1",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/pickers": "^3.3.10",
+    "@material-ui/styles": "^4.11.4",
+    "clipboard-copy": "^4.0.1",
+    "clsx": "^1.1.1",
+    "history": "^5.2.0",
+    "jss": "^10.9.0",
+    "jss-rtl": "^0.3.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "prismjs": "^1.27.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-app-polyfill": "^3.0.0",
+    "react-bottom-scroll-listener": "^5.0.0",
+    "react-color": "^2.19.3",
+    "react-countup": "^6.1.1",
+    "react-dom": "^17.0.2",
+    "react-intl": "^5.24.6",
+    "react-notifications": "^1.7.3",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.0",
+    "react-slick": "^0.28.1",
+    "react-window": "^1.8.6",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.3",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/runtime": "^7.17.2",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1",
+    "prettier-miscellaneous": "^1.5.3",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "babel-version": "babel --version",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css)\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "ie 11",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix"
+    ],
+    "*.+(js|jsx|json|css|md)": [
+      "prettier --write"
+    ]
+  }
+}
